@@ -1,0 +1,14 @@
+<p><strong>Liste des médicaments : </strong></p>
+<table border="1">
+  <tr>
+    <th>Matériaux</th>
+    <th>Quantitée</th>
+    <th>Prix</th>
+  </tr>
+  <%= error %>
+  <% for(var i=0; i<tabSpeMed.length; i++) {%>
+  <tr><td><%= tabSpeMed[i][0]%></td><td><%=tabSpeMed[i][1]%> </td><td><%=tabSpeMed[i][2]+'€'%></td></tr>
+  <% } %>
+</table>
+<p>Coût de fabrication du médicament : <%=prixSpeMed%>€</p>
+<p>Bénéfices sur les ventes : <%=(prixVenteSpeMed-prixSpeMed)%>€</p>

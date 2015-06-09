@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>error 404</title>
+  <link rel="stylesheet" href="/style.css"/>
+  <meta charset="utf8"/>
+</head>
+<body>
+    <div id="menu_gauche"><!-- Bloc : Liste des médicaments inscrits dans la BDD -->
+      <%= include function/listMedic %>
+    </div>
+    <div id="centre">
+      <div>
+        <p id="titre">Medigraph<a href="/"><img id="accueil" src="/images/accueil.png" alt="Accueil" style="width:100x;height:100px;" ></a></p>
+      </div>
+      <div id="corps"><!-- Bloc : Liste des matériaux -->
+        <p>Error 404. Cette page n'existe pas.</p>
+        </div>
+    </div>
+    <div id="menu_droite"><!-- Bloc : Liste des médicaments inscrits dans la BDD -->
+    <%= include function/listMetaux %>
+    </div>
+</body>
+<footer>
+  <p>Développé par Victor GODIER<br>victor.godier@gmail.com     http://victorgodier.wordpress.com</p>
+</footer>
+</html>

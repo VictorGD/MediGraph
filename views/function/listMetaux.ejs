@@ -1,0 +1,11 @@
+<p><strong>Prix des métaux en bourse : </strong></p>
+<table border="1">
+  <tr>
+    <th>Métal</th>
+    <th>Prix</th>
+  </tr>
+  <%= error %>
+  <% for(var i=0; i<metals.length; i++) {%>
+  <tr><td><%= metals[i].name%></td><td><%=metals[i].price+'€'%> </td></tr>
+  <% } %>
+</table>
